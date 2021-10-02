@@ -318,11 +318,13 @@ function verificar() {
   var teams_copy = teams.slice();
   ordenarListaPts(teams_copy);
 
-  var j = teams.findIndex((i) => i.name === teams_copy[0].name);
-  if (teams_copy[0].points == 0) {
-    teams[j].result = "none";
-  } else {
-    teams[j].result = "win";
+  if (teams.length > 0) {
+    var j = teams.findIndex((i) => i.name === teams_copy[0].name);
+    if (teams_copy[0].points == 0) {
+      teams[j].result = "none";
+    } else {
+      teams[j].result = "win";
+    }
   }
 
   for (var i = 1; i < teams.length; i++) {
