@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela de classificação de campeonato - ID3</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<!-- partial:index.partial.html -->
+
+<body>
+  <h1>Tabela de Classificação</h1>
+
+  <div class="container">
+    <div style="overflow-x:auto;">
+      <table style="width:100%" align="center">
+        <thead>
+          <tr>
+            <th rowspan="2" colspan="2">Time</th>
+            <th rowspan="2">Vitórias</th>
+            <th rowspan="2">Empates</th>
+            <th rowspan="2">Derrotas</th>
+            <th rowspan="2">Pontos</th>
+            <th colspan="3">Ações</th>
+          </tr>
+          <tr>
+            <th>Vitória</th>
+            <th>Empate<span class="s">s</span></th>
+            <th>Derrota</th>
+        </thead>
+        <tbody id="tabelaJogadores">
+          <!--       <tr>
+        <td>Paulo</td>
+        <td>(nº vitória)</td>
+        <td>(nº empates)</td>
+        <td>(nº derrotas)</td>
+        <td>(nº pontos)</td>
+        <td><button onClick="adicionarVitoria()">Vitória</button></td>
+        <td><button onClick="adicionarEmpate()">Empate</button></td>
+        <td><button onClick="adicionarDerrota()">Derrota</button></td>
+      </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <p id="erro_wins"></p>
+    <p id="erro_draws"></p>
+
+    <!-- Botão para zerar pontuação -->
+    <button onClick="zerar()">Zerar Pontuação</button>
+    <button onClick="apagarTabela()">Apagar Tabela</button><br><br>
+
+    <div class="opcoes">
+      <!-- Campo para adição de novos times -->
+      <div class="addTimes">
+        <input placeholder="Nome do Time" type="text" id="timeNovo" /><br>
+        <input placeholder="URL do Logotipo do Time" type="text" id="logoNovo" /><br>
+        <button type="submit" onclick="adicionarTime()">Adicionar Time</button>
+        <button type="submit" onclick="deletarTime()">Deletar Time</button><br>
+      </div> <!-- <div class="addTimes"> -->
+
+      <div class="ordenacao">
+        <!-- Botões para ordenação -->
+        <table align="center">
+          <tr>
+            <td style="text-align:left">
+              <input type="radio" id="classif" name="orden" value="classif" onclick='modoOrdenar()' checked><label for="classif">Ordenação por classificação</label><br>
+              <input type="radio" id="alfab" name="orden" value="alfab" onclick='modoOrdenar()'><label for="alfab">Ordenação alfabética</label><br>
+              <button type="submit" onclick="modoOrdenar()">Ordenar</button>
+            </td>
+          </tr>
+
+          <!-- Ordenação automática -->
+          <tr>
+            <td> Ordenação automática?<br>
+              <input type="radio" id="auto_sim" name="orden_auto" value="auto_sim" onclick='ordenarAuto()' checked><label for="auto_sim">Sim</label>
+              <input type="radio" id="auto_nao" name="orden_auto" value="auto_nao" onclick='ordenarAuto()'><label for="auto_nao">Não</label><br>
+            </td>
+          </tr>
+        </table>
+      </div> <!-- fecha <div class="ordenacao"> -->
+
+    </div> <!-- fecha <div class="opcoes"> -->
+
+  </div> <!-- fecha <div class="container"> -->
+
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>

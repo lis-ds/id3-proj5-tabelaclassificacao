@@ -1,0 +1,193 @@
+* {
+  text-align: center;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+  background-image: url("https://i.ibb.co/fFszn03/fundo-tela.png");
+  background-color: #000000;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 10px 100px;
+}
+
+.s {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    padding: 10px 20px;
+  }
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* img.logo { */
+table img {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+h1 {
+  color: white;
+}
+
+p#erro_wins,
+p#erro_draws {
+  color: red;
+}
+
+table {
+  /*   border: 2px solid white;
+  border-collapse: collapse; */
+}
+
+td.erro {
+  color: #f00000;
+}
+
+th,
+tr,
+td {
+  /*   border: solid 1px white; */
+  border: none;
+  border-radius: 5px;
+  padding-top: 5px;
+  vertical-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+tr.win {
+  background-color: rgba(139, 139, 139, 0.75);
+}
+
+.addTimes input {
+  width: 250px;
+  margin: 4px;
+  padding: 6px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+}
+
+button {
+  border: 0;
+  color: #000000;
+  background: #ffffff;
+  font-weight: bold;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ordenacao {
+  margin: 0 20px;
+}
+
+.ordenacao td {
+  padding: 10px 10px;
+}
+
+.ordenacao input {
+  margin: 10px;
+  margin-bottom: 0px;
+}
+
+.ordenacao button {
+  /*   visibility: hidden; */
+  display: none;
+}
+
+td > button {
+  padding: 5px 8px;
+  margin: 0 2px;
+  color: white;
+}
+
+.btnWin {
+  background-color: #004d00;
+}
+
+.btnDraw {
+  background-color: #cc7a00;
+}
+
+.btnLoss {
+  background-color: #990000;
+  /*   background-color: #800000; */
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Colocar os botões e caixas de input lado a lado */
+.opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ordenacao {
+  /*   text-align: left; */
+}
+
+@media screen and (max-width: 725px) {
+  .opcoes {
+    flex-direction: column;
+  }
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
