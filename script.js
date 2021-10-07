@@ -56,42 +56,6 @@ var teams = [
     draws: 2,
     points: 0,
     result: "none"
-  },
-  {
-    name: "Windy Howl",
-    logo: "https://i.ibb.co/4dh85ks/WH-red.png",
-    wins: 4,
-    losses: 4,
-    draws: 2,
-    points: 0,
-    result: "none"
-  },
-  {
-    name: "Hundred Blossoms",
-    logo: "https://i.ibb.co/yXQqrcd/HB-red.png",
-    wins: 2,
-    losses: 8,
-    draws: 0,
-    points: 0,
-    result: "none"
-  },
-  {
-    name: "Samsara",
-    logo: "https://i.ibb.co/0sbC8wf/SA-red.png",
-    wins: 3,
-    losses: 5,
-    draws: 2,
-    points: 0,
-    result: "none"
-  },
-  {
-    name: "Thunderclap",
-    logo: "https://i.ibb.co/kDMHxJR/TC-red.png",
-    wins: 3,
-    losses: 2,
-    draws: 5,
-    points: 0,
-    result: "none"
   }
 ];
 
